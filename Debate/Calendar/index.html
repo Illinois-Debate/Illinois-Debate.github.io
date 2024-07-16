@@ -8,12 +8,15 @@
     <script src="calendar.js" defer></script>
 </head>
 <body>
+    <button id="toggle-dark-mode">Toggle Dark Mode</button>
     <div class="calendar-container">
+        <!-- Calendar header with navigation buttons and current month/year display -->
         <div class="calendar-header">
             <button id="prev-month">&lt;</button>
             <h2 id="calendar-month-year"></h2>
             <button id="next-month">&gt;</button>
         </div>
+        <!-- Grid for days of the week labels -->
         <div class="calendar-grid">
             <div class="calendar-day">Sun</div>
             <div class="calendar-day">Mon</div>
@@ -23,8 +26,10 @@
             <div class="calendar-day">Fri</div>
             <div class="calendar-day">Sat</div>
         </div>
+        <!-- Grid for calendar days -->
         <div id="calendar-days" class="calendar-grid"></div>
     </div>
+    <!-- Container for listing upcoming events -->
     <div class="events-container">
         <h3>Upcoming Events</h3>
         <ul id="events-list"></ul>
