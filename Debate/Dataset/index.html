@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Schools Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th>Coach</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Types of Debate</th>
+                    <th>CONGRESS</th>
+                    <th>Lincoln-Douglas</th>
+                    <th>Public Forum</th>
+                    <th>Policy</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
