@@ -99,6 +99,10 @@ section ul li a:hover {
 }
 
 /* Dark Mode */
+
+
+
+
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
