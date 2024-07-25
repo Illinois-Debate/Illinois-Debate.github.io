@@ -11,7 +11,7 @@ body {
   background-color: #333;
   overflow: hidden;
   justify-content: center;
-  display: flex
+  display: flex;
 }
 
 .navbar a {
@@ -27,7 +27,6 @@ body {
   background-color: #ddd;
   color: black;
 }
-
 
 .header {
   padding: 60px;
@@ -102,9 +101,6 @@ section ul li a:hover {
 }
 
 /* Dark Mode */
-
-
-
 
 body.dark-mode {
   background-color: #121212;
