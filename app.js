@@ -1,11 +1,22 @@
 document
-  .getElementById("dark-mode-toggle")
-  .addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-    document.querySelector(".navbar").classList.toggle("dark-mode");
-    document.querySelector(".header").classList.toggle("dark-mode");
-    document.querySelectorAll("section").forEach(function (section) {
-      section.classList.toggle("dark-mode");
+    const toggleSwitch = document.querySelector('#toggle');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+        document.body.classList.add(currentTheme);
+        if (currentTheme === 'dark-mode') {
+            toggleSwitch.checked = true;
+        }
+    }
+
+    toggleSwitch.addEventListener('change', () => {
+        if (toggleSwitch.checked) {
+            document.body.classList.add('dark-mode');
+            document.querySelectorAll('section').forEach(section => section.classList.add('dark-mode'));
+            localStorage.setItem('theme', 'dark-mode');
+        } else {
+            document.body.classList.remove('dark-mode');
+            document.querySelectorAll('section').forEach(section => section.classList.remove('dark-mode'));
+            localStorage.setItem('theme', 'light-mode');
+        }
     });
-    document.querySelector(".footer").classList.toggle("dark-mode");
-  });
