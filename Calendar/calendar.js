@@ -98,10 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
     renderCalendar(currentDate);
   });
 
-  // Event listener for dark mode toggle
-  toggleDarkModeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-  });
+  
 
   // Initial render of the calendar
   renderCalendar(currentDate);
