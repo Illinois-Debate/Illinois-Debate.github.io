@@ -66,7 +66,7 @@ label {
   background-color: #ccc;
   border-radius: 12px;
   position: relative;
-  transition: background-color .1s;
+  transition: background-color 0.1s;
 }
 
 .circle svg {
@@ -79,13 +79,13 @@ label {
 .sun {
   left: 4px;
   opacity: 1;
-  transition: opacity .1s;
+  transition: opacity 0.1s;
 }
 
 .moon {
   right: 4px;
   opacity: 0;
-  transition: opacity .1s;
+  transition: opacity 0.1s;
 }
 
 input[type="checkbox"]:checked + label .circle {
