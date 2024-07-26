@@ -1,59 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events Calendar</title>
-    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="calendar.css" />
     <script src="calendar.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar" role="navigation">
-        <a href="/index.html#competitive-debate" aria-label="Competitive Debate Section"
-          >Competitive Debate</a
-        >
-        <a href="/index.html#types-of-debate" aria-label="Types of Debate Section"
-          >Types of Debate</a
-        >
-        <a href="/index.html#example-rounds" aria-label="Example Debate Rounds Section"
-          >Example Rounds</a
-        >
-        <a
-          href="/index.html#leagues-and-organizations"
-          aria-label="Leagues and Organizations Section"
-          >Leagues & Organizations</a
-        >
-        <a href="/index.html#contact-list" aria-label="Contact List Section">Contact List</a>
-        <a href="/index.html#advanced-resources" aria-label="Advanced Resources Section"
-          >Advanced Resources</a
-        >
-        <a href="#Calendar" aria-label="Calendar Section">Calendar</a>
-      </nav>
-    <button id="toggle-dark-mode">Toggle Dark Mode</button>
+      <div class="logo">
+        <img
+          src="/img/Tab Icon 500 x 500.png"
+          alt="Illinois Debate Community Logo"
+        />
+      </div>
+      <a
+        href="/index.html#competitive-debate"
+        aria-label="Competitive Debate Section"
+        >Competitive Debate</a
+      >
+      <a href="/index.html#types-of-debate" aria-label="Types of Debate Section"
+        >Types of Debate</a
+      >
+      <a
+        href="/index.html#example-rounds"
+        aria-label="Example Debate Rounds Section"
+        >Example Rounds</a
+      >
+      <a
+        href="/index.html#leagues-and-organizations"
+        aria-label="Leagues and Organizations Section"
+        >Leagues & Organizations</a
+      >
+      <a href="/index.html#contact-list" aria-label="Contact List Section"
+        >Contact List</a
+      >
+      <a
+        href="/index.html#advanced-resources"
+        aria-label="Advanced Resources Section"
+        >Advanced Resources</a
+      >
+      <a href="#Calendar" aria-label="Calendar Section">Calendar</a>
+      <div class="toggle-container">
+        <input type="checkbox" id="toggle" />
+        <label for="toggle">
+          <div class="circle">
+            <svg
+              class="sun"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+              />
+            </svg>
+            <svg
+              class="moon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </label>
+      </div>
+    </nav>
     <div class="calendar-container">
-        <!-- Calendar header with navigation buttons and current month/year display -->
-        <div class="calendar-header">
-            <button id="prev-month">&lt;</button>
-            <h2 id="calendar-month-year"></h2>
-            <button id="next-month">&gt;</button>
-        </div>
-        <!-- Grid for days of the week labels -->
-        <div class="calendar-grid">
-            <div class="calendar-day">Sun</div>
-            <div class="calendar-day">Mon</div>
-            <div class="calendar-day">Tue</div>
-            <div class="calendar-day">Wed</div>
-            <div class="calendar-day">Thu</div>
-            <div class="calendar-day">Fri</div>
-            <div class="calendar-day">Sat</div>
-        </div>
-        <!-- Grid for calendar days -->
-        <div id="calendar-days" class="calendar-grid"></div>
+      <!-- Calendar header with navigation buttons and current month/year display -->
+      <div class="calendar-header">
+        <button id="prev-month">&lt;</button>
+        <h2 id="calendar-month-year"></h2>
+        <button id="next-month">&gt;</button>
+      </div>
+      <!-- Grid for days of the week labels -->
+      <div class="calendar-grid">
+        <div class="calendar-day">Sun</div>
+        <div class="calendar-day">Mon</div>
+        <div class="calendar-day">Tue</div>
+        <div class="calendar-day">Wed</div>
+        <div class="calendar-day">Thu</div>
+        <div class="calendar-day">Fri</div>
+        <div class="calendar-day">Sat</div>
+      </div>
+      <!-- Grid for calendar days -->
+      <div id="calendar-days" class="calendar-grid"></div>
     </div>
     <!-- Container for listing upcoming events -->
     <div class="events-container">
-        <h3>Upcoming Events</h3>
-        <ul id="events-list"></ul>
+      <h3>Upcoming Events</h3>
+      <ul id="events-list"></ul>
     </div>
-</body>
+  </body>
 </html>
