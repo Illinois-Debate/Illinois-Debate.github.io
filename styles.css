@@ -18,13 +18,13 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between logo and links */
+  justify-content: space-between;
   width: 100%;
 }
 
 .navbar .logo img {
   height: 50px;
-  margin: 5px 20px; /* Adjust the margin as needed */
+  margin: 5px 20px;
 }
 
 .navbar a {
@@ -104,7 +104,7 @@ input[type="checkbox"]:checked + label .moon {
   text-align: center;
   background: #1abc9c;
   color: white;
-  padding: 60px 20px; /* Adjust padding for better layout */
+  padding: 60px 20px;
 }
 
 .header h1 {
