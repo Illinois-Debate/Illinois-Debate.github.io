@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const prevMonthBtn = document.getElementById("prev-month");
   const nextMonthBtn = document.getElementById("next-month");
   const eventsList = document.getElementById("events-list");
-  const toggleDarkModeBtn = document.getElementById("toggle-dark-mode");
 
   let currentDate = new Date();
 
@@ -97,8 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
     currentDate.setMonth(currentDate.getMonth() + 1);
     renderCalendar(currentDate);
   });
-
-  
 
   // Initial render of the calendar
   renderCalendar(currentDate);
