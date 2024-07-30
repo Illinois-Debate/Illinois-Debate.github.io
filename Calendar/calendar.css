@@ -221,20 +221,20 @@ body.dark-mode {
 }
 
 body.dark-mode .calendar-container {
-  background-color: #444;
+  background-color: #1abc9c;
   border-color: #666;
 }
 
 body.dark-mode .calendar-header {
-  background-color: #333;
+  background-color: #1abc9c;
 }
 
 body.dark-mode .calendar-grid {
-  background-color: #555;
+  background-color: #1abc9c;
 }
 
 body.dark-mode .calendar-day {
-  background-color: #444;
+  background-color: #1abc9c;
   color: #f0f0f0;
 }
 
@@ -252,7 +252,7 @@ body.dark-mode .calendar-date.has-event:hover {
 }
 
 body.dark-mode .events-container {
-  background-color: #444;
+  background-color: #1abc9c;
   border-color: #666;
 }
 
