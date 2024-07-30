@@ -8,6 +8,7 @@
     <script src="./calendar.js" defer></script>
     <script src="../dark-mode.js" defer></script>
   </head>
+
   <body>
     <nav class="navbar" role="navigation">
       <div class="logo">
@@ -21,7 +22,9 @@
         aria-label="Competitive Debate Section"
         >Competitive Debate</a
       >
-      <a href="../index.html#types-of-debate" aria-label="Types of Debate Section"
+      <a
+        href="../index.html#types-of-debate"
+        aria-label="Types of Debate Section"
         >Types of Debate</a
       >
       <a
@@ -76,9 +79,36 @@
     <div class="calendar-container">
       <!-- Calendar header with navigation buttons and current month/year display -->
       <div class="calendar-header">
-        <button id="prev-month">&lt;</button>
+        <button id="prev-month">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="0.88em"
+            height="1em"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H109.3l105.3-105.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            />
+          </svg>
+          <p>Previous</p>
+        </button>
+
         <h2 id="calendar-month-year"></h2>
-        <button id="next-month">&gt;</button>
+        <button id="next-month">
+          <p>Next</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="0.88em"
+            height="1em"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+            />
+          </svg>
+        </button>
       </div>
       <!-- Grid for days of the week labels -->
       <div class="calendar-grid">
