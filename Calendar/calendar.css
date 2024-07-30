@@ -123,6 +123,146 @@ input[type="checkbox"]:checked + label .moon {
   margin: 0;
 }
 
+/*Calendar buttons #prev-month*/
+#prev-month {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#prev-month {
+  --button-primary-color: #111;
+  --button-hovered-color: #004c82;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 1em;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#prev-month p {
+  margin: 0;
+  position: relative;
+  font-size: 1em;
+  color: var(--button-primary-color);
+}
+
+#prev-month::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--button-hovered-color);
+  height: 2px;
+  transition: 0.3s ease-in;
+}
+
+#prev-month p::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "Previous";
+  width: 0%;
+  inset: 0;
+  color: var(--button-hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-in;
+}
+
+#prev-month:hover::after {
+  width: 100%;
+}
+
+#prev-month:hover p::before {
+  width: 100%;
+}
+
+#prev-month:hover svg {
+  transform: translateX(4px);
+  color: var(--button-hovered-color);
+}
+
+#prev-month svg {
+  color: var(--button-primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
+
+/*Calendar buttons #next-month*/
+#next-month {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#next-month {
+  --button-primary-color: #111;
+  --button-hovered-color: #004c82;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 1em;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#next-month p {
+  margin: 0;
+  position: relative;
+  font-size: 1em;
+  color: var(--button-primary-color);
+}
+
+#next-month::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--button-hovered-color);
+  height: 2px;
+  transition: 0.3s ease-in;
+}
+
+#next-month p::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "Next";
+  width: 0%;
+  inset: 0;
+  color: var(--button-hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-in;
+}
+
+#next-month:hover::after {
+  width: 100%;
+}
+
+#next-month:hover p::before {
+  width: 100%;
+}
+
+#next-month:hover svg {
+  transform: translateX(4px);
+  color: var(--button-hovered-color);
+}
+
+#next-month svg {
+  color: var(--button-primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
+
 /* Calendar grid styles */
 .calendar-grid {
   display: grid;
