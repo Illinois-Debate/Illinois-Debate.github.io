@@ -9,9 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Array of events with date and title
   const events = [
-    { date: "2024-07-15", title: "Debate Tournament" },
-    { date: "2024-07-22", title: "Workshop" },
-    { date: "2024-08-01", title: "Seminar" },
+    { date: "2024-09-21", title: "ICDA 1: Grayslake North" },
+    { date: "2024-10-19", title: "ICDA 2: Wheeling" },
+    { date: "2024-11-09", title: "ICDA 3: Conant" },
+    { date: "2024-12-07", title: "ICDA 4: Lyons" },
+    { date: "2025-1-18", title: "ICDA 5: Highland Park" },
+    { date: "2025-2-22", title: "ICDA Championship: Harper" },
   ];
 
   // Function to format dates as "Month Day, Year"
