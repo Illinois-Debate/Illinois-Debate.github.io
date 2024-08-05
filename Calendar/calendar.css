@@ -265,28 +265,40 @@ input[type="checkbox"]:checked + label .moon {
 }
 
 /* Calendar grid styles */
+.calendar-wrapper{
+  padding: 8px;
+  background-color: black;
+}
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-gap: 1px;
+  grid-gap: 3px;
   background-color: #ddd;
   border: #c89d6b;
 }
 
 /* Calendar day and date styles */
-.calendar-day,
-.calendar-date {
+.calendar-day {
+  min-width: 80px;
   background-color: #fff;
   color: #48041c;
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
   border: #c89d6b;
+  font-size: 85%;
 }
 
 .calendar-date {
   min-height: 60px;
+  min-width: 80px;
   position: relative;
+  background-color: #fff;
+  color: #48041c;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border: #c89d6b;
 }
 
 /* Styles for dates with events */
