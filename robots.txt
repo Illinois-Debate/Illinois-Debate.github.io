@@ -5,4 +5,3 @@ Disallow: /app.js
 Disallow: /Calendar/calendar.js
 Disallow: /CNAME
 Disallow: /googlef9f8f83ee9aa906b.html
-Disallow: /sitemap.xml
