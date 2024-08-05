@@ -87,7 +87,7 @@ label {
 }
 
 input[type="checkbox"]:checked + label .circle {
-  background-color: #1abc9c;
+  background-color: black;
 }
 
 input[type="checkbox"]:checked + label .sun {
@@ -135,7 +135,7 @@ input[type="checkbox"]:checked + label .moon {
 
 #prev-month {
   --button-primary-color: white;
-  --button-hovered-color: #4b0d1d;
+  --button-hovered-color: #c89d6b;
   position: relative;
   display: flex;
   font-weight: 600;
@@ -205,7 +205,7 @@ input[type="checkbox"]:checked + label .moon {
 
 #next-month {
   --button-primary-color: white;
-  --button-hovered-color: #4b0d1d;
+  --button-hovered-color: #c89d6b;
   position: relative;
   display: flex;
   font-weight: 600;

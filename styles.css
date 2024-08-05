@@ -90,7 +90,7 @@ label {
 }
 
 input[type="checkbox"]:checked + label .circle {
-  background-color: #c89d6b;
+  background-color: black;
 }
 
 input[type="checkbox"]:checked + label .sun {
