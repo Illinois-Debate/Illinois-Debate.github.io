@@ -135,7 +135,7 @@ input[type="checkbox"]:checked + label .moon {
 
 #prev-month {
   --button-primary-color: white;
-  --button-hovered-color: #c89d6b;
+  --button-hovered-color: #4b0d1d;
   position: relative;
   display: flex;
   font-weight: 600;
@@ -205,7 +205,7 @@ input[type="checkbox"]:checked + label .moon {
 
 #next-month {
   --button-primary-color: white;
-  --button-hovered-color: #c89d6b;
+  --button-hovered-color: #4b0d1d;
   position: relative;
   display: flex;
   font-weight: 600;
@@ -355,12 +355,12 @@ input[type="checkbox"]:checked + label .moon {
 }
 
 .navbar.dark-mode a:hover {
-  background-color: #333;
+  background-color: #c89d6b;
   color: white;
 }
 
 body.dark-mode {
-  background-color: #2c2c2c;
+  background-color: black;
   color: #f0f0f0;
 }
 
@@ -370,15 +370,16 @@ body.dark-mode .calendar-container {
 }
 
 body.dark-mode .calendar-header {
-  background-color: #1abc9c;
+  background-color: #c89d6b;
+  color: white;
 }
 
 body.dark-mode .calendar-grid {
-  background-color: #1abc9c;
+  background-color: #c89d6b;
 }
 
 body.dark-mode .calendar-day {
-  background-color: #1abc9c;
+  background-color: #c89d6b;
   color: #f0f0f0;
 }
 
@@ -396,11 +397,12 @@ body.dark-mode .calendar-date.has-event:hover {
 }
 
 body.dark-mode .events-container {
-  background-color: #1abc9c;
+  background-color: #4b0d1d;
   border-color: #666;
+  color: white;
 }
 
 body.dark-mode .events-container ul li {
-  background-color: #555;
+  background-color: #c89d6b;
   border-color: #666;
 }
