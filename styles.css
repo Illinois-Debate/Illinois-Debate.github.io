@@ -90,7 +90,7 @@ label {
 }
 
 input[type="checkbox"]:checked + label .circle {
-  background-color: #1abc9c;
+  background-color: #c89d6b;
 }
 
 input[type="checkbox"]:checked + label .sun {
@@ -106,6 +106,7 @@ input[type="checkbox"]:checked + label .moon {
   background: white;
   color: black;
   padding: 60px 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header h1 {
@@ -191,11 +192,12 @@ body.dark-mode {
 
 .navbar.dark-mode a:hover {
   background-color: #333;
-  color: white;
+  color: #c89d6b;
 }
 
 .header.dark-mode {
-  background: #333;
+  background: black;
+  color: #c89d6b;
 }
 
 section.dark-mode {
@@ -204,18 +206,29 @@ section.dark-mode {
 }
 
 section.dark-mode h2 {
-  color: #e0e0e0;
-  border-bottom: 2px solid #1abc9c;
+  color: #c89d6b;
+  border-bottom: 2px solid #4b0d1d;
 }
 
 section.dark-mode p {
-  color: #cccccc;
+  color: #c89d6b;
 }
 
 section.dark-mode ul li {
   background: #333;
+  color: #c89d6b;
+}
+
+section.dark-mode ul li a {
+  color: #c89d6b;
+  text-decoration: #c89d6b;
 }
 
 .footer.dark-mode {
   background-color: #1c1c1c;
+}
+
+.footer.dark-mode a {
+  color: #4b0d1d;
+  text-decoration: none;
 }
