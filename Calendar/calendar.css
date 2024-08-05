@@ -279,7 +279,7 @@ input[type="checkbox"]:checked + label .moon {
   background-color: #fff;
   color: #48041c;
   text-align: center;
-  padding: 10ppx;
+  padding: 10px;
   box-sizing: border-box;
   border: #c89d6b;
 }
