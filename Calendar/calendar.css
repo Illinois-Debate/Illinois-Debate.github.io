@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-  background-color: #4b0d1d;
+  background-color: #48041c;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #4b0d1d;
+  background-color: #48041c;
   color: black;
 }
 
@@ -277,7 +277,7 @@ input[type="checkbox"]:checked + label .moon {
 .calendar-day,
 .calendar-date {
   background-color: #fff;
-  color: #4b0d1d;
+  color: #48041c;
   text-align: center;
   padding: 10ppx;
   box-sizing: border-box;
@@ -292,7 +292,7 @@ input[type="checkbox"]:checked + label .moon {
 /* Styles for dates with events */
 .calendar-date.has-event {
   background-color: white;
-  color: #4b0d1d;
+  color: #48041c;
   cursor: pointer;
 }
 
@@ -397,7 +397,7 @@ body.dark-mode .calendar-date.has-event:hover {
 }
 
 body.dark-mode .events-container {
-  background-color: #4b0d1d;
+  background-color: #48041c;
   border-color: #666;
   color: white;
 }
