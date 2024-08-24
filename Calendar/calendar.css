@@ -265,7 +265,7 @@ input[type="checkbox"]:checked + label .moon {
 }
 
 /* Calendar grid styles */
-.calendar-wrapper{
+.calendar-wrapper {
   padding: 8px;
   background-color: black;
 }
