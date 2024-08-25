@@ -1,4 +1,3 @@
-// Import the necessary Firebase modules
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
 import {
   getFirestore,
@@ -31,8 +30,9 @@ getDocs(debateSchoolsCollection).then((querySnapshot) => {
     addRowToTable(data);
   });
 
-  // Initialize the top scrollbar after the table has been populated
+  // Initialize the top scrollbar and touch scrolling after the table has been populated
   initializeTopScrollbar();
+  initializeTouchScrolling();
 });
 
 // Function to add row to the table
@@ -81,5 +81,24 @@ function initializeTopScrollbar() {
 
   scrollWrapper.addEventListener("scroll", () => {
     topScrollbar.scrollLeft = scrollWrapper.scrollLeft;
+  });
+}
+
+// Initialize touch scrolling
+function initializeTouchScrolling() {
+  const scrollWrapper = document.querySelector(".scroll-wrapper");
+
+  let startX;
+  let scrollLeft;
+
+  scrollWrapper.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+    scrollLeft = scrollWrapper.scrollLeft;
+  });
+
+  scrollWrapper.addEventListener("touchmove", (e) => {
+    const x = e.touches[0].clientX;
+    const walk = (x - startX) * 2; // Scroll-fast factor
+    scrollWrapper.scrollLeft = scrollLeft - walk;
   });
 }

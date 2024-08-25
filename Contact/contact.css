@@ -180,8 +180,9 @@ body {
 
 /* Scroll Wrapper for Top Scrollbar */
 .scroll-wrapper {
-  overflow-x: hidden;
-  margin-top: 10px; /* Space between scrollbar and table */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  margin-top: 10px;
+  position: relative;
 }
 
 .scroll-wrapper::-webkit-scrollbar {
@@ -225,7 +226,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
-  overflow-x: hidden; /* Hide the original scrollbar */
+  overflow-x: auto; /* Hide the original scrollbar */
 }
 
 table th,
