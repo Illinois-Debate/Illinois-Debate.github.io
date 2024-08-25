@@ -9,18 +9,28 @@
 
 <url>
   <loc>https://www.illinoisdebate.com/</loc>
-  <lastmod>2024-08-05T03:58:19+00:00</lastmod>
+  <lastmod>2024-08-25T21:15:42+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.illinoisdebate.com/Calendar/calendar.html</loc>
-  <lastmod>2024-08-05T03:58:19+00:00</lastmod>
+  <loc>https://www.illinoisdebate.com/index.html</loc>
+  <lastmod>2024-08-25T21:15:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.illinoisdebate.com/index.html</loc>
-  <lastmod>2024-08-05T03:58:19+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.illinoisdebate.com/Types%20of%20Debate/typesDebate.html</loc>
+  <lastmod>2024-08-25T21:15:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.illinoisdebate.com/Contact/contact.html</loc>
+  <lastmod>2024-08-25T21:15:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.illinoisdebate.com/Calendar/calendar.html</loc>
+  <lastmod>2024-08-25T21:15:42+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 
