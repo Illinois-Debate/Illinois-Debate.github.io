@@ -10,11 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
   // Array of events with date and title
   const events = [
     { date: "2024-09-21", title: "ICDA 1: Grayslake North" },
-    { date: "2024-10-19", title: "ICDA 2: Wheeling" },
+    { date: "2024-10-05", title: "PF/LD: Schaumburg" },
+    { date: "2024-10-19", title: "ICDA 2: Wheeling & PF/LD: Homewood-Flossmoor" },
+    { date: "2024-11-02", title: "PF/LD: University HS (Normal, IL)" },
     { date: "2024-11-09", title: "ICDA 3: Conant" },
+    { date: "2024-11-16", title: "PF/LD: Palatine" },
     { date: "2024-12-07", title: "ICDA 4: Lyons" },
+    { date: "2024-12-07", title: "PF/LD: Belvidere North" },
     { date: "2025-01-18", title: "ICDA 5: Highland Park" },
     { date: "2025-02-22", title: "ICDA Championship: Harper" },
+    { date: "2025-05-24", title: "PF/LD: NCFL Nationals @ Chicago" },
+    { date: "2025-05-25", title: "PF/LD: NCFL Nationals @ Chicago" },
   ];
 
   // Function to format dates as "Month Day, Year"
