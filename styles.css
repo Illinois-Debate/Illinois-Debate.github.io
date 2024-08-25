@@ -222,6 +222,19 @@ section ul li a:hover {
   text-decoration: underline;
 }
 
+#competitive-debate div{
+  padding-top: 10px;
+}
+
+#competitive-debate a{
+  color: #48041c;
+  text-decoration: none;
+}
+
+#competitive-debate a:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 .footer {
   background-color: #333;
