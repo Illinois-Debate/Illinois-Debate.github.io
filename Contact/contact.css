@@ -167,36 +167,75 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #c89d6b;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #c89d6b;
+  overflow-x: hidden; /* Allows horizontal scrolling */
+  position: relative;
+}
+
+/* Scroll Wrapper for Top Scrollbar */
+.scroll-wrapper {
+  overflow-x: hidden;
+  margin-top: 10px; /* Space between scrollbar and table */
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+  height: 10px;
+  background-color: #ccc; /* Customize scrollbar color */
+  border-radius: 5px; /* Optional: round the scrollbar thumb edges */
+  width: 50px; /* Adjust the scrollbar thumb width to be smaller */
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+  background-color: #333; /* Customize scrollbar thumb color */
+}
+
+.top-scrollbar {
+  overflow-x: auto;
+  height: 10px; /* height for the custom top scrollbar */
+  width: 100%;
+}
+
+.top-scrollbar::-webkit-scrollbar {
+  height: 10px;
+  background-color: #ccc; /* Customize scrollbar color */
+  border-radius: 5px; /* Optional: round the scrollbar thumb edges */
+}
+
+.top-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 5px; /* Optional: round the scrollbar thumb edges */
+  width: 50px; /* Adjust the scrollbar thumb width to be smaller */
 }
 
 #searchInput {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 2px solid black;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow-x: hidden; /* Hide the original scrollbar */
 }
 
-table th, table td {
-    border: 2px solid black;
-    padding: 10px;
-    text-align: left;
-    background-color: #f2f2f2;
+table th,
+table td {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: left;
+  background-color: #f2f2f2;
 }
 
 table th {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }

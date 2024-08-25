@@ -30,6 +30,9 @@ getDocs(debateSchoolsCollection).then((querySnapshot) => {
     const data = doc.data();
     addRowToTable(data);
   });
+
+  // Initialize the top scrollbar after the table has been populated
+  initializeTopScrollbar();
 });
 
 // Function to add row to the table
@@ -46,7 +49,7 @@ function addRowToTable(data) {
     <td>${data["Lincoln-Douglas"] ? "x" : ""}</td>
     <td>${data["Public Forum"] ? "x" : ""}</td>
     <td>${data.Policy ? "x" : ""}</td>
-`;
+  `;
 
   tableBody.appendChild(row);
 }
@@ -61,3 +64,22 @@ document.getElementById("searchInput").addEventListener("keyup", function () {
     row.style.display = text.includes(filter) ? "" : "none";
   });
 });
+
+function initializeTopScrollbar() {
+  const scrollWrapper = document.querySelector(".scroll-wrapper");
+  const topScrollbar = document.querySelector(".top-scrollbar");
+
+  // Create a scrollable element in the top scrollbar container
+  const topScrollContent = document.createElement("div");
+  topScrollContent.style.width = `${scrollWrapper.scrollWidth}px`;
+  topScrollbar.appendChild(topScrollContent);
+
+  // Sync the scroll positions
+  topScrollbar.addEventListener("scroll", () => {
+    scrollWrapper.scrollLeft = topScrollbar.scrollLeft;
+  });
+
+  scrollWrapper.addEventListener("scroll", () => {
+    topScrollbar.scrollLeft = scrollWrapper.scrollLeft;
+  });
+}
