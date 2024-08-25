@@ -20,7 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-   /* Space between logo, links, and toggle */
+  /* Space between logo, links, and toggle */
   width: 100%;
 }
 
@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   font-family: Georgia, serif;
 }
 
@@ -38,7 +38,7 @@ body {
   display: block;
 }
 
-.navbar .logo .logo-link img{
+.navbar .logo .logo-link img {
   height: 50px;
   margin: 5px 20px; /* Adjust the margin as needed */
 }
@@ -60,7 +60,8 @@ body {
   display: none;
 }
 
-.open-sidebar-button, .close-sidebar-button {
+.open-sidebar-button,
+.close-sidebar-button {
   display: none;
 }
 
@@ -87,7 +88,8 @@ body {
     justify-content: flex-start;
   }
 
-  .open-sidebar-button, .close-sidebar-button {
+  .open-sidebar-button,
+  .close-sidebar-button {
     padding: 20px;
     display: block;
   }
@@ -171,7 +173,7 @@ body {
   background: white;
   color: black;
   padding: 60px 20px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header h1 {
@@ -222,11 +224,11 @@ section ul li a:hover {
   text-decoration: underline;
 }
 
-#competitive-debate div{
+#competitive-debate div {
   padding-top: 10px;
 }
 
-#competitive-debate a{
+#competitive-debate a {
   color: #48041c;
   text-decoration: none;
 }
